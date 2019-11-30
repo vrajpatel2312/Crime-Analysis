@@ -318,42 +318,46 @@ We used the follwing algoriths for predictions</p>
               <div class="btn-group">
     <button type="button" class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2019</button>
     <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
-      <a class="dropdown-item" >Bronx</a>
-      <a class="dropdown-item" >Manhattan</a>
-      <a class="dropdown-item" >Brooklyn</a>
-      <a class="dropdown-item" >Staten Island</a>  <a class="dropdown-item" >Queens</a>
+      <a onclick="myFunction(this)" class="dropdown-item" id='1'  >Bronx</a>
+      <a onclick="myFunction(this)" class="dropdown-item" id='5' class="dropdown-item" >Manhattan</a>
+      <a onclick="myFunction(this)" class="dropdown-item" id='9' class="dropdown-item" >Brooklyn</a>
+      <a onclick="myFunction(this)" class="dropdown-item" id='13' class="dropdown-item" >Staten Island</a> 
+        <a  onclick="myFunction(this)" class="dropdown-item" id='17' class="dropdown-item" >Queens</a>
     </div>
   </div><!-- /btn-group -->
   <div class="btn-group">
     <button type="button" class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2020</button>
     <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
-      <a class="dropdown-item" >Bronx</a>
-      <a class="dropdown-item" >Manhattan</a>
-      <a class="dropdown-item" >Brooklyn</a>
-      <a class="dropdown-item" >Staten Island</a>  <a class="dropdown-item" >Queens</a>
+      <a onclick="myFunction(this)" class="dropdown-item" id='2' class="dropdown-item" >Bronx</a>
+      <a onclick="myFunction(this)" class="dropdown-item" id='6' class="dropdown-item" >Manhattan</a>
+      <a onclick="myFunction(this)" class="dropdown-item" id='10' class="dropdown-item" >Brooklyn</a>
+      <a onclick="myFunction(this)" class="dropdown-item" id='14' class="dropdown-item" >Staten Island</a> 
+        <a onclick="myFunction(this)" class="dropdown-item" id='18'  class="dropdown-item" >Queens</a>
     </div>
   </div><!-- /btn-group -->
   <div class="btn-group">
     <button type="button" class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2021</button>
     <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
-      <a class="dropdown-item" >Bronx</a>
-      <a class="dropdown-item" >Manhattan</a>
-      <a class="dropdown-item" >Brooklyn</a>
-      <a class="dropdown-item" >Staten Island</a>  <a class="dropdown-item" >Queens</a>
+      <a onclick="myFunction(this)" class="dropdown-item" id='3'  class="dropdown-item" >Bronx</a>
+      <a onclick="myFunction(this)" class="dropdown-item" id='7'  class="dropdown-item" >Manhattan</a>
+      <a onclick="myFunction(this)" class="dropdown-item" id='11'  class="dropdown-item" >Brooklyn</a>
+      <a  onclick="myFunction(this)" class="dropdown-item" id='15' class="dropdown-item" >Staten Island</a> 
+        <a  onclick="myFunction(this)" class="dropdown-item" id='19' class="dropdown-item" >Queens</a>
     </div>
   </div><!-- /btn-group -->
   <div class="btn-group">
     <button type="button" class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2022</button>
     <div class="dropdown-menu">
-      <a class="dropdown-item" >Bronx</a>
-      <a class="dropdown-item" >Manhattan</a>
-      <a class="dropdown-item" >Brooklyn</a>
-      <a class="dropdown-item" >Staten Island</a>  <a class="dropdown-item" >Queens</a>
+      <a onclick="myFunction(this)" class="dropdown-item" id='4'  class="dropdown-item" >Bronx</a>
+      <a onclick="myFunction(this)" class="dropdown-item" id='8'  class="dropdown-item" >Manhattan</a>
+      <a onclick="myFunction(this)" class="dropdown-item" id='12'  class="dropdown-item" >Brooklyn</a>
+      <a onclick="myFunction(this)" class="dropdown-item" id='16'  class="dropdown-item" >Staten Island</a>
+        <a onclick="myFunction(this)" class="dropdown-item" id='20'  class="dropdown-item" >Queens</a>
     </div>
   </div>
             <div class="card text-center card-pricing">
                   <!-- /btn-group -->
-              <canvas class="d-none" id="myChart1" width="525" height="360"></canvas>
+          <canvas class="d-none" id="myChart1" width="525" height="360"></canvas>
           <canvas class="d-none" id="myChart2" width="525" height="360"></canvas>
           <canvas class="d-none" id="myChart3" width="525" height="360"></canvas>
           <canvas class="d-none" id="myChart4" width="525" height="360"></canvas>
@@ -369,6 +373,10 @@ We used the follwing algoriths for predictions</p>
           <canvas class="d-none" id="myChart14" width="525" height="360"></canvas>
           <canvas class="d-none" id="myChart15" width="525" height="360"></canvas>
           <canvas class="d-none" id="myChart16" width="525" height="360"></canvas>
+          <canvas class="d-none" id="myChart17" width="525" height="360"></canvas>
+          <canvas class="d-none" id="myChart18" width="525" height="360"></canvas>
+          <canvas class="d-none" id="myChart19" width="525" height="360"></canvas>
+          <canvas class="d-none" id="myChart20" width="525" height="360"></canvas>
               
             </div>
           </div>
@@ -377,37 +385,41 @@ We used the follwing algoriths for predictions</p>
               <div class="btn-group">
     <button type="button" class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2019</button>
     <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
-      <a class="dropdown-item" >Bronx</a>
-      <a class="dropdown-item" >Manhattan</a>
-      <a class="dropdown-item" >Brooklyn</a>
-      <a class="dropdown-item" >Staten Island</a>  <a class="dropdown-item" >Queens</a>
+      <a onclick="myFunction2(this)" class="dropdown-item" id='1'  >Bronx</a>
+      <a onclick="myFunction2(this)" class="dropdown-item" id='5' class="dropdown-item" >Manhattan</a>
+      <a onclick="myFunction2(this)" class="dropdown-item" id='9' class="dropdown-item" >Brooklyn</a>
+      <a onclick="myFunction2(this)" class="dropdown-item" id='13' class="dropdown-item" >Staten Island</a> 
+        <a  onclick="myFunction2(this)" class="dropdown-item" id='17' class="dropdown-item" >Queens</a>
     </div>
   </div><!-- /btn-group -->
   <div class="btn-group">
     <button type="button" class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2020</button>
     <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
-      <a class="dropdown-item" >Bronx</a>
-      <a class="dropdown-item" >Manhattan</a>
-      <a class="dropdown-item" >Brooklyn</a>
-      <a class="dropdown-item" >Staten Island</a>  <a class="dropdown-item" >Queens</a>
+      <a onclick="myFunction2(this)" class="dropdown-item" id='2' class="dropdown-item" >Bronx</a>
+      <a onclick="myFunction2(this)" class="dropdown-item" id='6' class="dropdown-item" >Manhattan</a>
+      <a onclick="myFunction2(this)" class="dropdown-item" id='10' class="dropdown-item" >Brooklyn</a>
+      <a onclick="myFunction2(this)" class="dropdown-item" id='14' class="dropdown-item" >Staten Island</a> 
+        <a onclick="myFunction2(this)" class="dropdown-item" id='18'  class="dropdown-item" >Queens</a>
     </div>
   </div><!-- /btn-group -->
   <div class="btn-group">
     <button type="button" class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2021</button>
     <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
-      <a class="dropdown-item" >Bronx</a>
-      <a class="dropdown-item" >Manhattan</a>
-      <a class="dropdown-item" >Brooklyn</a>
-      <a class="dropdown-item" >Staten Island</a>  <a class="dropdown-item" >Queens</a>
+      <a onclick="myFunction2(this)" class="dropdown-item" id='3'  class="dropdown-item" >Bronx</a>
+      <a onclick="myFunction2(this)" class="dropdown-item" id='7'  class="dropdown-item" >Manhattan</a>
+      <a onclick="myFunction2(this)" class="dropdown-item" id='11'  class="dropdown-item" >Brooklyn</a>
+      <a  onclick="myFunction2(this)" class="dropdown-item" id='15' class="dropdown-item" >Staten Island</a> 
+        <a  onclick="myFunction2(this)" class="dropdown-item" id='19' class="dropdown-item" >Queens</a>
     </div>
   </div><!-- /btn-group -->
   <div class="btn-group">
     <button type="button" class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2022</button>
     <div class="dropdown-menu">
-      <a class="dropdown-item" >Bronx</a>
-      <a class="dropdown-item" >Manhattan</a>
-      <a class="dropdown-item" >Brooklyn</a>
-      <a class="dropdown-item" >Staten Island</a>  <a class="dropdown-item" >Queens</a>
+      <a onclick="myFunction2(this)" class="dropdown-item" id='4'  class="dropdown-item" >Bronx</a>
+      <a onclick="myFunction2(this)" class="dropdown-item" id='8'  class="dropdown-item" >Manhattan</a>
+      <a onclick="myFunction2(this)" class="dropdown-item" id='12'  class="dropdown-item" >Brooklyn</a>
+      <a onclick="myFunction2(this)" class="dropdown-item" id='16'  class="dropdown-item" >Staten Island</a>
+        <a onclick="myFunction2(this)" class="dropdown-item" id='20'  class="dropdown-item" >Queens</a>
     </div>
   </div>
             <div class="card text-center card-pricing">
@@ -427,6 +439,10 @@ We used the follwing algoriths for predictions</p>
           <canvas class="d-none" id="myChart_14" width="525" height="360"></canvas>
           <canvas class="d-none" id="myChart_15" width="525" height="360"></canvas>
           <canvas class="d-none" id="myChart_16" width="525" height="360"></canvas>
+          <canvas class="d-none" id="myChart_17" width="525" height="360"></canvas>
+          <canvas class="d-none" id="myChart_18" width="525" height="360"></canvas>
+          <canvas class="d-none" id="myChart_19" width="525" height="360"></canvas>
+          <canvas class="d-none" id="myChart_20" width="525" height="360"></canvas>
           
                         
             </div>
@@ -1617,6 +1633,289 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				},
 			}
 		};
+        var QUEENS2019 = {
+			type: 'line',
+			data: {
+				labels: [{% for item in labels %}
+                   "{{item}}",
+                  {% endfor %}],
+				datasets: [{
+					label: 'KNN',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.red,
+					borderColor: window.chartColors.red,
+					data: [{% for item in values['QUEENSknn2019'] %}
+                      {{item}},
+                    {% endfor %}]
+				}, {
+					label: 'Decision Tree',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.blue,
+					borderColor: window.chartColors.blue,
+					data: [{% for item in values['QUEENSdtc2019'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Quadratic Regression 2',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.green,
+					borderColor: window.chartColors.green,
+					data: [{% for item in values['QUEENSclfpoly22019'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Quadratic Regression 3',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.yellow,
+					borderColor: window.chartColors.yellow,
+					data: [{% for item in values['QUEENSclfpoly32019'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Logistic Regression',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.grey,
+					borderColor: window.chartColors.grey,
+					data: [{% for item in values['QUEENSlr2019'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Random Forest',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.orange,
+					borderColor: window.chartColors.orange,
+					data: [{% for item in values['QUEENSrf2019'] %}
+                      {{item}},
+                    {% endfor %}],
+				}]
+			},
+			options: {
+				responsive: true,
+				title: {
+					display: true,
+					text: 'QUEENS 2019 Predicted Crime rate'
+				},
+			}
+		};
+            
+        var QUEENS2020 = {
+			type: 'line',
+			data: {
+				labels: [{% for item in labels %}
+                   "{{item}}",
+                  {% endfor %}],
+				datasets: [{
+					label: 'KNN',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.red,
+					borderColor: window.chartColors.red,
+					data: [{% for item in values['QUEENSknn2020'] %}
+                      {{item}},
+                    {% endfor %}]
+				}, {
+					label: 'Decision Tree',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.blue,
+					borderColor: window.chartColors.blue,
+					data: [{% for item in values['QUEENSdtc2020'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Quadratic Regression 2',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.green,
+					borderColor: window.chartColors.green,
+					data: [{% for item in values['QUEENSclfpoly22020'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Quadratic Regression 3',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.yellow,
+					borderColor: window.chartColors.yellow,
+					data: [{% for item in values['QUEENSclfpoly32020'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Logistic Regression',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.grey,
+					borderColor: window.chartColors.grey,
+					data: [{% for item in values['QUEENSlr2020'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Random Forest',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.orange,
+					borderColor: window.chartColors.orange,
+					data: [{% for item in values['QUEENSrf2020'] %}
+                      {{item}},
+                    {% endfor %}],
+				}]
+			},
+			options: {
+				responsive: true,
+				title: {
+					display: true,
+					text: 'QUEENS 2020 Predicted Crime rate'
+				},
+			}
+		};
+        
+        var QUEENS2021 = {
+			type: 'line',
+			data: {
+				labels: [{% for item in labels %}
+                   "{{item}}",
+                  {% endfor %}],
+				datasets: [{
+					label: 'KNN',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.red,
+					borderColor: window.chartColors.red,
+					data: [{% for item in values['QUEENSknn2021'] %}
+                      {{item}},
+                    {% endfor %}]
+				}, {
+					label: 'Decision Tree',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.blue,
+					borderColor: window.chartColors.blue,
+					data: [{% for item in values['QUEENSdtc2021'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Quadratic Regression 2',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.green,
+					borderColor: window.chartColors.green,
+					data: [{% for item in values['QUEENSclfpoly22021'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Quadratic Regression 3',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.yellow,
+					borderColor: window.chartColors.yellow,
+					data: [{% for item in values['QUEENSclfpoly32021'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Logistic Regression',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.grey,
+					borderColor: window.chartColors.grey,
+					data: [{% for item in values['QUEENSlr2021'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Random Forest',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.orange,
+					borderColor: window.chartColors.orange,
+					data: [{% for item in values['QUEENSrf2021'] %}
+                      {{item}},
+                    {% endfor %}],
+				}]
+			},
+			options: {
+				responsive: true,
+				title: {
+					display: true,
+					text: 'QUEENS 2021 Predicted Crime rate'
+				},
+			}
+		};
+            
+            var QUEENS2022 = {
+			type: 'line',
+			data: {
+				labels: [{% for item in labels %}
+                   "{{item}}",
+                  {% endfor %}],
+				datasets: [{
+					label: 'KNN',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.red,
+					borderColor: window.chartColors.red,
+					data: [{% for item in values['QUEENSknn2022'] %}
+                      {{item}},
+                    {% endfor %}]
+				}, {
+					label: 'Decision Tree',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.blue,
+					borderColor: window.chartColors.blue,
+					data: [{% for item in values['QUEENSdtc2022'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Quadratic Regression 2',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.green,
+					borderColor: window.chartColors.green,
+					data: [{% for item in values['QUEENSclfpoly22022'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Quadratic Regression 3',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.yellow,
+					borderColor: window.chartColors.yellow,
+					data: [{% for item in values['QUEENSclfpoly32022'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Logistic Regression',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.grey,
+					borderColor: window.chartColors.grey,
+					data: [{% for item in values['QUEENSlr2022'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Random Forest',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.orange,
+					borderColor: window.chartColors.orange,
+					data: [{% for item in values['QUEENSrf2022'] %}
+                      {{item}},
+                    {% endfor %}],
+				}]
+			},
+			options: {
+				responsive: true,
+				title: {
+					display: true,
+					text: 'QUEENS 2022 Predicted Crime rate'
+				},
+			}
+		};
 
       // get chart canvas
       var ctx1 = document.getElementById("myChart1").getContext("2d");
@@ -1635,6 +1934,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
       var ctx14 = document.getElementById("myChart14").getContext("2d");
       var ctx15 = document.getElementById("myChart15").getContext("2d");
       var ctx16 = document.getElementById("myChart16").getContext("2d");
+      var ctx17 = document.getElementById("myChart17").getContext("2d");
+      var ctx18 = document.getElementById("myChart18").getContext("2d");
+      var ctx19 = document.getElementById("myChart19").getContext("2d");
+      var ctx20 = document.getElementById("myChart20").getContext("2d");
       var ctx_1 = document.getElementById("myChart_1").getContext("2d");
       var ctx_2 = document.getElementById("myChart_2").getContext("2d");
       var ctx_3 = document.getElementById("myChart_3").getContext("2d");
@@ -1651,6 +1954,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
       var ctx_14 = document.getElementById("myChart_14").getContext("2d");
       var ctx_15 = document.getElementById("myChart_15").getContext("2d");
       var ctx_16 = document.getElementById("myChart_16").getContext("2d");
+      var ctx_17 = document.getElementById("myChart_17").getContext("2d");
+      var ctx_18 = document.getElementById("myChart_18").getContext("2d");
+      var ctx_19 = document.getElementById("myChart_19").getContext("2d");
+      var ctx_20 = document.getElementById("myChart_20").getContext("2d");
 
 
 
@@ -1671,6 +1978,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
       var myChart14= new Chart(ctx14,STATENISLAND2020);
       var myChart15= new Chart(ctx15,STATENISLAND2021);
       var myChart16= new Chart(ctx16,STATENISLAND2022);
+      var myChart17= new Chart(ctx17,QUEENS2019);
+      var myChart18= new Chart(ctx18,QUEENS2020);
+      var myChart19= new Chart(ctx19,QUEENS2021);
+      var myChart20= new Chart(ctx20,QUEENS2022);
       var myChart_1= new Chart(ctx_1,bronx2019);
       var myChart_2= new Chart(ctx_2,bronx2020);
       var myChart_3= new Chart(ctx_3,bronx2021);
@@ -1687,8 +1998,38 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
       var myChart_14= new Chart(ctx_14,STATENISLAND2020);
       var myChart_15= new Chart(ctx_15,STATENISLAND2021);
       var myChart_16= new Chart(ctx_16,STATENISLAND2022);
+      var myChart_17= new Chart(ctx_17,QUEENS2019);
+      var myChart_18= new Chart(ctx_18,QUEENS2020);
+      var myChart_19= new Chart(ctx_19,QUEENS2021);
+      var myChart_20= new Chart(ctx_20,QUEENS2022);
             
-            
+    
+    function myFunction() { 
+        var chart = 'myChart';
+                for(i = 1; i<21;i++)
+                    {
+                        
+                        var text = chart+i;
+                        console.log(text);
+                        document.getElementById(text).className = "d-none";
+                    }
+                    var show=chart+event.target.id
+                    document.getElementById(show).className = "d-block";
+                    
+           }
+    function myFunction2() { 
+        var chart = 'myChart_';
+                for(i = 1; i<21;i++)
+                    {
+                        
+                        var text = chart+i;
+                        console.log(text);
+                        document.getElementById(text).className = "d-none";
+                    }
+                    var show=chart+event.target.id
+                    document.getElementById(show).className = "d-block";
+                    
+           }
             
     </script>
 _
