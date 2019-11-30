@@ -74,7 +74,7 @@
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container box_1620">
           <!-- Brand and toggle get grouped for better mobile display -->
-          <a class="navbar-brand logo_h" href="index.html"><img src="static/img/logo.png" alt=""></a>
+          
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -84,24 +84,15 @@
           <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
             <ul class="nav navbar-nav menu_nav justify-content-end">
               <li class="nav-item active"><a class="nav-link c"  onclick="smoothScroll(document.getElementById('1'))">Home</a></li> 
-              <li class="nav-item"><a class="nav-link c" onclick="smoothScroll(document.getElementById('2'))">Feature</a></li> 
-              <li class="nav-item"><a class="nav-link c" onclick="smoothScroll(document.getElementById('3'))">Price</a>
-              <li class="nav-item submenu dropdown">
-                <a  class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false">Pages</a>
-                <ul class="dropdown-menu">
-                  <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                  <li class="nav-item"><a class="nav-link" href="blog-details.html">Blog Details</a></li>
-                </ul>
-							</li>
-              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+              <li class="nav-item"><a class="nav-link c" onclick="smoothScroll(document.getElementById('2'))">Data Sources</a></li> 
+              <li class="nav-item"><a class="nav-link c" onclick="smoothScroll(document.getElementById('3'))">Business Understanding</a>
+              
+              <li class="nav-item"><a class="nav-link c" onclick="smoothScroll(document.getElementById('algo'))" >Algorithms</a></li>
+                <li class="nav-item"><a class="nav-link c" onclick="smoothScroll(document.getElementById('eval'))" >Evaluation</a></li>
+                <li class="nav-item"><a class="nav-link c" onclick="smoothScroll(document.getElementById('chart'))">Charts</a></li>
             </ul>
 
-            <ul class="navbar-right">
-              <li class="nav-item">
-                <button class="button button-header bg">Sign up</button>
-              </li>
-            </ul>
+           
           </div> 
         </div>
       </nav>
@@ -131,18 +122,18 @@
       </div>
     </section>
     <!--================ Hero sm Banner end =================-->
-
+<div id ='2'></div>
     <!--================ Feature section start =================-->      
-    <section id='2' class="section-margin">
+    <section id='' class="section-margin">
       <div class="container">
-        <div class="section-intro pb-85px text-center">
+        <div id='' class="section-intro pb-85px text-center">
           <h2 class="section-intro__title">Data Sources</h2>
           <p class="section-intro__subtitle">The crime reports are our main data source, which contain attributes like crime date, time, borough, type of crime, and accurate crime latitude and longitude. Only violent crimes are included in the reports. The reports list all the violent crime committed since 2017 in New York City. With these reports we are able to locate all the crimes, know when all these crimes happened.</p>
         </div>
 
         <div class="container">
           <div class="row">
-            <div class="col-lg-4">
+            <div class="col-md-6 mb-4">
               <div class="card card-feature text-center text-lg-left mb-4 mb-lg-0">
                 <span class="card-feature__icon">
                   <i class="ti-package"></i>
@@ -151,7 +142,7 @@
                 <p class="card-feature__subtitle">https://www.bls.gov/regions/new-york-new-jersey/data/xg-tables/ro2xglausnyc.htm</p>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-md-6 mb-4">
               <div class="card card-feature text-center text-lg-left mb-4 mb-lg-0">
                 <span class="card-feature__icon">
                   <i class="ti-mouse-alt"></i>
@@ -160,15 +151,7 @@
                 <p class="card-feature__subtitle">https://data.world/mithragoesdark/crime-in-new-york-city</p>
               </div>
             </div>
-            <div class="col-lg-4">
-              <div class="card card-feature text-center text-lg-left mb-4 mb-lg-0">
-                <span class="card-feature__icon">
-                  <i class="ti-headphone-alt"></i>
-                </span>
-                <h3 class="card-feature__title">Customer Support</h3>
-                <p class="card-feature__subtitle">Molestie lorem est faucibus faucibus erat phasellus placerat proin aptent</p>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -183,7 +166,7 @@
             <div class="about__content">
               <h2>Business Understanding</h2>
               <p> We know that crime rate is an important index of security. However, crime rate may change greatly over time, so experience only cannot always give us the exact current status. What our project does is analyze the pervious crime reports, relate these reports with other index of the area, and finally, try to predict the crime rate. For city administrations, they may understand the trend of the variation, and make an effort to improve the security. Police stations may use that prediction and try to decide how many police force they will assign to different places. Visitors and travelers, those who are not so familiar with the city, can also benefit from our prediction and plan their trips accordingly. Therefore, in our project, we analyze the crime reports, apply various algorithms to build our model, try to find out what might be the key predictors, and then make the predictions.</p>
-              <a class="button button-light" >Know More</a>
+              
             </div>
           </div>
           <div class="col-md-7">
@@ -197,7 +180,8 @@
     <!--================ about section end =================-->      
     
     <!--================ Offer section start =================-->      
-    <section class="section-margin">
+    <div id="algo"></div>
+      <section class="section-margin">
       <div class="container">
         <div class="section-intro pb-85px text-center">
           <h2 class="section-intro__title">Algorithms</h2>
@@ -285,6 +269,7 @@ We used the follwing algoriths for predictions</p>
     <!--================ Offer section end =================-->      
 
     <!--================ Solution section start =================-->      
+      <div id="eval"></div>
     <section class="section-padding--small bg-magnolia">
       <div class="container">
         <div class="row align-items-center pt-xl-3 pb-xl-5">
@@ -293,6 +278,7 @@ We used the follwing algoriths for predictions</p>
               <img class="img-fluid" src="static/img/home/solution.png" alt="">
             </div>
           </div>
+            
           <div class="col-lg-6">
             <div class="solution__content">
               <h2>Evaluation</h2>
@@ -305,11 +291,12 @@ We used the follwing algoriths for predictions</p>
     </section>
     <!--================ Solution section end =================-->      
 
-    <!--================ Pricing section start =================-->      
+    <!--================ Pricing section start =================-->    
+      <div id="chart"></div>
     <section class="section-margin">
       <div class="container">
         <div class="section-intro pb-85px text-center">
-          <h2 class="section-intro__title">Predicting Crime rates across all the 5 borroughs</h2>
+          <h2 class="section-intro__title">Predicting Crime rates across all the 5 boroughs</h2>
           <p class="section-intro__subtitle"> The analysis of the crime and unemployment in the boroughs of New York would be from the year 2019 till the year 2022. The webpage will interactive crime chart by  year.</p>
         </div>
 
@@ -357,7 +344,7 @@ We used the follwing algoriths for predictions</p>
   </div>
             <div class="card text-center card-pricing">
                   <!-- /btn-group -->
-          <canvas class="d-none" id="myChart1" width="525" height="360"></canvas>
+          <canvas class="d-block" id="myChart1" width="525" height="360"></canvas>
           <canvas class="d-none" id="myChart2" width="525" height="360"></canvas>
           <canvas class="d-none" id="myChart3" width="525" height="360"></canvas>
           <canvas class="d-none" id="myChart4" width="525" height="360"></canvas>
@@ -424,7 +411,7 @@ We used the follwing algoriths for predictions</p>
   </div>
             <div class="card text-center card-pricing">
           <canvas class="d-none" id="myChart_1" width="525" height="360"></canvas>
-          <canvas class="d-none" id="myChart_2" width="525" height="360"></canvas>
+          <canvas class="d-block" id="myChart_2" width="525" height="360"></canvas>
           <canvas class="d-none" id="myChart_3" width="525" height="360"></canvas>
           <canvas class="d-none" id="myChart_4" width="525" height="360"></canvas>
           <canvas class="d-none" id="myChart_5" width="525" height="360"></canvas>
@@ -513,7 +500,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     lineTension: 0,
 					backgroundColor: window.chartColors.red,
 					borderColor: window.chartColors.red,
-					data: [{% for item in values['brooklynknn2019'] %}
+					data: [{% for item in values['MANHATTANknn2019'] %}
                       {{item}},
                     {% endfor %}]
 				}, {
@@ -796,7 +783,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     lineTension: 0,
 					backgroundColor: window.chartColors.red,
 					borderColor: window.chartColors.red,
-					data: [{% for item in values['brooklynknn2019'] %}
+					data: [{% for item in values['BROOKLYNknn2019'] %}
                       {{item}},
                     {% endfor %}]
 				}, {
@@ -1079,7 +1066,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     lineTension: 0,
 					backgroundColor: window.chartColors.red,
 					borderColor: window.chartColors.red,
-					data: [{% for item in values['STATENISLANDknn2019'] %}
+					data: [{% for item in values['STATEN ISLANDknn2019'] %}
                       {{item}},
                     {% endfor %}]
 				}, {
@@ -1088,7 +1075,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     lineTension: 0,
 					backgroundColor: window.chartColors.blue,
 					borderColor: window.chartColors.blue,
-					data: [{% for item in values['STATENISLANDdtc2019'] %}
+					data: [{% for item in values['STATEN ISLANDdtc2019'] %}
                       {{item}},
                     {% endfor %}],
 				}, {
@@ -1097,7 +1084,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     lineTension: 0,
 					backgroundColor: window.chartColors.green,
 					borderColor: window.chartColors.green,
-					data: [{% for item in values['STATENISLANDclfpoly22019'] %}
+					data: [{% for item in values['STATEN ISLANDclfpoly22019'] %}
                       {{item}},
                     {% endfor %}],
 				}, {
@@ -1106,7 +1093,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     lineTension: 0,
 					backgroundColor: window.chartColors.yellow,
 					borderColor: window.chartColors.yellow,
-					data: [{% for item in values['STATENISLANDclfpoly32019'] %}
+					data: [{% for item in values['STATEN ISLANDclfpoly32019'] %}
                       {{item}},
                     {% endfor %}],
 				}, {
@@ -1115,7 +1102,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     lineTension: 0,
 					backgroundColor: window.chartColors.grey,
 					borderColor: window.chartColors.grey,
-					data: [{% for item in values['STATENISLANDlr2019'] %}
+					data: [{% for item in values['STATEN ISLANDlr2019'] %}
                       {{item}},
                     {% endfor %}],
 				}, {
@@ -1124,7 +1111,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     lineTension: 0,
 					backgroundColor: window.chartColors.orange,
 					borderColor: window.chartColors.orange,
-					data: [{% for item in values['STATENISLANDrf2019'] %}
+					data: [{% for item in values['STATEN ISLANDrf2019'] %}
                       {{item}},
                     {% endfor %}],
 				}]
@@ -1133,7 +1120,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				responsive: true,
 				title: {
 					display: true,
-					text: 'STATENISLAND 2019 Predicted Crime rate'
+					text: 'STATEN ISLAND 2019 Predicted Crime rate'
 				},
 			}
 		};
@@ -1150,7 +1137,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     lineTension: 0,
 					backgroundColor: window.chartColors.red,
 					borderColor: window.chartColors.red,
-					data: [{% for item in values['STATENISLANDknn2020'] %}
+					data: [{% for item in values['STATEN ISLANDknn2020'] %}
                       {{item}},
                     {% endfor %}]
 				}, {
@@ -1159,7 +1146,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     lineTension: 0,
 					backgroundColor: window.chartColors.blue,
 					borderColor: window.chartColors.blue,
-					data: [{% for item in values['STATENISLANDdtc2020'] %}
+					data: [{% for item in values['STATEN ISLANDdtc2020'] %}
                       {{item}},
                     {% endfor %}],
 				}, {
@@ -1168,7 +1155,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     lineTension: 0,
 					backgroundColor: window.chartColors.green,
 					borderColor: window.chartColors.green,
-					data: [{% for item in values['STATENISLANDclfpoly22020'] %}
+					data: [{% for item in values['STATEN ISLANDclfpoly22020'] %}
                       {{item}},
                     {% endfor %}],
 				}, {
@@ -1177,7 +1164,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     lineTension: 0,
 					backgroundColor: window.chartColors.yellow,
 					borderColor: window.chartColors.yellow,
-					data: [{% for item in values['STATENISLANDclfpoly32020'] %}
+					data: [{% for item in values['STATEN ISLANDclfpoly32020'] %}
                       {{item}},
                     {% endfor %}],
 				}, {
@@ -1186,7 +1173,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     lineTension: 0,
 					backgroundColor: window.chartColors.grey,
 					borderColor: window.chartColors.grey,
-					data: [{% for item in values['STATENISLANDlr2020'] %}
+					data: [{% for item in values['STATEN ISLANDlr2020'] %}
                       {{item}},
                     {% endfor %}],
 				}, {
@@ -1195,7 +1182,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     lineTension: 0,
 					backgroundColor: window.chartColors.orange,
 					borderColor: window.chartColors.orange,
-					data: [{% for item in values['STATENISLANDrf2020'] %}
+					data: [{% for item in values['STATEN ISLANDrf2020'] %}
                       {{item}},
                     {% endfor %}],
 				}]
@@ -1204,7 +1191,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				responsive: true,
 				title: {
 					display: true,
-					text: 'STATENISLAND 2020 Predicted Crime rate'
+					text: 'STATEN ISLAND 2020 Predicted Crime rate'
 				},
 			}
 		};
@@ -1221,7 +1208,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     lineTension: 0,
 					backgroundColor: window.chartColors.red,
 					borderColor: window.chartColors.red,
-					data: [{% for item in values['STATENISLANDknn2021'] %}
+					data: [{% for item in values['STATEN ISLANDknn2021'] %}
                       {{item}},
                     {% endfor %}]
 				}, {
@@ -1230,7 +1217,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     lineTension: 0,
 					backgroundColor: window.chartColors.blue,
 					borderColor: window.chartColors.blue,
-					data: [{% for item in values['STATENISLANDdtc2021'] %}
+					data: [{% for item in values['STATEN ISLANDdtc2021'] %}
                       {{item}},
                     {% endfor %}],
 				}, {
@@ -1239,7 +1226,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     lineTension: 0,
 					backgroundColor: window.chartColors.green,
 					borderColor: window.chartColors.green,
-					data: [{% for item in values['STATENISLANDclfpoly22021'] %}
+					data: [{% for item in values['STATEN ISLANDclfpoly22021'] %}
                       {{item}},
                     {% endfor %}],
 				}, {
@@ -1248,7 +1235,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     lineTension: 0,
 					backgroundColor: window.chartColors.yellow,
 					borderColor: window.chartColors.yellow,
-					data: [{% for item in values['STATENISLANDclfpoly32021'] %}
+					data: [{% for item in values['STATEN ISLANDclfpoly32021'] %}
                       {{item}},
                     {% endfor %}],
 				}, {
@@ -1257,7 +1244,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     lineTension: 0,
 					backgroundColor: window.chartColors.grey,
 					borderColor: window.chartColors.grey,
-					data: [{% for item in values['STATENISLANDlr2021'] %}
+					data: [{% for item in values['STATEN ISLANDlr2021'] %}
                       {{item}},
                     {% endfor %}],
 				}, {
@@ -1266,7 +1253,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     lineTension: 0,
 					backgroundColor: window.chartColors.orange,
 					borderColor: window.chartColors.orange,
-					data: [{% for item in values['STATENISLANDrf2021'] %}
+					data: [{% for item in values['STATEN ISLANDrf2021'] %}
                       {{item}},
                     {% endfor %}],
 				}]
@@ -1275,7 +1262,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				responsive: true,
 				title: {
 					display: true,
-					text: 'STATENISLAND 2021 Predicted Crime rate'
+					text: 'STATEN ISLAND 2021 Predicted Crime rate'
 				},
 			}
 		};
@@ -1292,7 +1279,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     lineTension: 0,
 					backgroundColor: window.chartColors.red,
 					borderColor: window.chartColors.red,
-					data: [{% for item in values['STATENISLANDknn2022'] %}
+					data: [{% for item in values['STATEN ISLANDknn2022'] %}
                       {{item}},
                     {% endfor %}]
 				}, {
@@ -1301,7 +1288,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     lineTension: 0,
 					backgroundColor: window.chartColors.blue,
 					borderColor: window.chartColors.blue,
-					data: [{% for item in values['STATENISLANDdtc2022'] %}
+					data: [{% for item in values['STATEN ISLANDdtc2022'] %}
                       {{item}},
                     {% endfor %}],
 				}, {
@@ -1310,7 +1297,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     lineTension: 0,
 					backgroundColor: window.chartColors.green,
 					borderColor: window.chartColors.green,
-					data: [{% for item in values['STATENISLANDclfpoly22022'] %}
+					data: [{% for item in values['STATEN ISLANDclfpoly22022'] %}
                       {{item}},
                     {% endfor %}],
 				}, {
@@ -1319,7 +1306,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     lineTension: 0,
 					backgroundColor: window.chartColors.yellow,
 					borderColor: window.chartColors.yellow,
-					data: [{% for item in values['STATENISLANDclfpoly32022'] %}
+					data: [{% for item in values['STATEN ISLANDclfpoly32022'] %}
                       {{item}},
                     {% endfor %}],
 				}, {
@@ -1328,7 +1315,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     lineTension: 0,
 					backgroundColor: window.chartColors.grey,
 					borderColor: window.chartColors.grey,
-					data: [{% for item in values['STATENISLANDlr2022'] %}
+					data: [{% for item in values['STATEN ISLANDlr2022'] %}
                       {{item}},
                     {% endfor %}],
 				}, {
@@ -1337,7 +1324,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     lineTension: 0,
 					backgroundColor: window.chartColors.orange,
 					borderColor: window.chartColors.orange,
-					data: [{% for item in values['STATENISLANDrf2022'] %}
+					data: [{% for item in values['STATEN ISLANDrf2022'] %}
                       {{item}},
                     {% endfor %}],
 				}]
@@ -1346,7 +1333,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				responsive: true,
 				title: {
 					display: true,
-					text: 'STATENISLAND 2022 Predicted Crime rate'
+					text: 'STATEN ISLAND 2022 Predicted Crime rate'
 				},
 			}
 		};
