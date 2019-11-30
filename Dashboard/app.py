@@ -10,7 +10,7 @@ app = Flask(__name__)
 def index():
     PATH='1.csv'
     df = pd.read_csv(PATH)
-    borough= ['BRONX','BROOKLYN','MANHATTAN','STATEN ISLAND']
+    borough= ['BRONX','BROOKLYN','MANHATTAN','STATENISLAND']
     model = ['knn','lr','dtc','clfpoly3','clfpoly2','rf']
     values={}
     year = [2017,2018,2019,2020,2021,2022]
