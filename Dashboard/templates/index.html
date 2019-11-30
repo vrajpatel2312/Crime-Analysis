@@ -122,7 +122,7 @@
           </div>
           <div class="col-lg-5 pt-5">
             <div class="hero-banner__content">
-              <h1>Advanced software made simple</h1>
+              <h1>hi</h1>
               <p>Vel aliquam quis, nulla pede mi commodo tristique nam hac Luctun torquent velit felis commodo pellentesque nulla cras vel aliqua quisan nulla pede mi commoda</p>
               
             </div>
@@ -372,7 +372,856 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
       Chart.defaults.global.responsive = false;
 
       // define the chart data
-      var bronx2019 = {
+     var MANHATTAN2019 = {
+			type: 'line',
+			data: {
+				labels: [{% for item in labels %}
+                   "{{item}}",
+                  {% endfor %}],
+				datasets: [{
+					label: 'KNN',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.red,
+					borderColor: window.chartColors.red,
+					data: [{% for item in values['brooklynknn2019'] %}
+                      {{item}},
+                    {% endfor %}]
+				}, {
+					label: 'Decision Tree',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.blue,
+					borderColor: window.chartColors.blue,
+					data: [{% for item in values['MANHATTANdtc2019'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Quadratic Regression 2',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.green,
+					borderColor: window.chartColors.green,
+					data: [{% for item in values['MANHATTANclfpoly22019'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Quadratic Regression 3',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.yellow,
+					borderColor: window.chartColors.yellow,
+					data: [{% for item in values['MANHATTANclfpoly32019'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Logistic Regression',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.grey,
+					borderColor: window.chartColors.grey,
+					data: [{% for item in values['MANHATTANlr2019'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Random Forest',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.orange,
+					borderColor: window.chartColors.orange,
+					data: [{% for item in values['MANHATTANrf2019'] %}
+                      {{item}},
+                    {% endfor %}],
+				}]
+			},
+			options: {
+				responsive: true,
+				title: {
+					display: true,
+					text: 'MANHATTAN 2019 Predicted Crime rate'
+				},
+			}
+		};
+            
+        var MANHATTAN2020 = {
+			type: 'line',
+			data: {
+				labels: [{% for item in labels %}
+                   "{{item}}",
+                  {% endfor %}],
+				datasets: [{
+					label: 'KNN',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.red,
+					borderColor: window.chartColors.red,
+					data: [{% for item in values['MANHATTANknn2020'] %}
+                      {{item}},
+                    {% endfor %}]
+				}, {
+					label: 'Decision Tree',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.blue,
+					borderColor: window.chartColors.blue,
+					data: [{% for item in values['MANHATTANdtc2020'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Quadratic Regression 2',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.green,
+					borderColor: window.chartColors.green,
+					data: [{% for item in values['MANHATTANclfpoly22020'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Quadratic Regression 3',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.yellow,
+					borderColor: window.chartColors.yellow,
+					data: [{% for item in values['MANHATTANclfpoly32020'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Logistic Regression',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.grey,
+					borderColor: window.chartColors.grey,
+					data: [{% for item in values['MANHATTANlr2020'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Random Forest',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.orange,
+					borderColor: window.chartColors.orange,
+					data: [{% for item in values['MANHATTANrf2020'] %}
+                      {{item}},
+                    {% endfor %}],
+				}]
+			},
+			options: {
+				responsive: true,
+				title: {
+					display: true,
+					text: 'MANHATTAN 2020 Predicted Crime rate'
+				},
+			}
+		};
+        
+        var MANHATTAN2021 = {
+			type: 'line',
+			data: {
+				labels: [{% for item in labels %}
+                   "{{item}}",
+                  {% endfor %}],
+				datasets: [{
+					label: 'KNN',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.red,
+					borderColor: window.chartColors.red,
+					data: [{% for item in values['MANHATTANknn2021'] %}
+                      {{item}},
+                    {% endfor %}]
+				}, {
+					label: 'Decision Tree',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.blue,
+					borderColor: window.chartColors.blue,
+					data: [{% for item in values['MANHATTANdtc2021'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Quadratic Regression 2',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.green,
+					borderColor: window.chartColors.green,
+					data: [{% for item in values['MANHATTANclfpoly22021'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Quadratic Regression 3',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.yellow,
+					borderColor: window.chartColors.yellow,
+					data: [{% for item in values['MANHATTANclfpoly32021'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Logistic Regression',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.grey,
+					borderColor: window.chartColors.grey,
+					data: [{% for item in values['MANHATTANlr2021'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Random Forest',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.orange,
+					borderColor: window.chartColors.orange,
+					data: [{% for item in values['MANHATTANrf2021'] %}
+                      {{item}},
+                    {% endfor %}],
+				}]
+			},
+			options: {
+				responsive: true,
+				title: {
+					display: true,
+					text: 'MANHATTAN 2021 Predicted Crime rate'
+				},
+			}
+		};
+            
+            var MANHATTAN2022 = {
+			type: 'line',
+			data: {
+				labels: [{% for item in labels %}
+                   "{{item}}",
+                  {% endfor %}],
+				datasets: [{
+					label: 'KNN',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.red,
+					borderColor: window.chartColors.red,
+					data: [{% for item in values['MANHATTANknn2022'] %}
+                      {{item}},
+                    {% endfor %}]
+				}, {
+					label: 'Decision Tree',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.blue,
+					borderColor: window.chartColors.blue,
+					data: [{% for item in values['MANHATTANdtc2022'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Quadratic Regression 2',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.green,
+					borderColor: window.chartColors.green,
+					data: [{% for item in values['MANHATTANclfpoly22022'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Quadratic Regression 3',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.yellow,
+					borderColor: window.chartColors.yellow,
+					data: [{% for item in values['MANHATTANclfpoly32022'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Logistic Regression',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.grey,
+					borderColor: window.chartColors.grey,
+					data: [{% for item in values['MANHATTANlr2022'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Random Forest',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.orange,
+					borderColor: window.chartColors.orange,
+					data: [{% for item in values['MANHATTANrf2022'] %}
+                      {{item}},
+                    {% endfor %}],
+				}]
+			},
+			options: {
+				responsive: true,
+				title: {
+					display: true,
+					text: 'MANHATTAN 2022 Predicted Crime rate'
+				},
+			}
+		};
+             var BROOKLYN2019 = {
+			type: 'line',
+			data: {
+				labels: [{% for item in labels %}
+                   "{{item}}",
+                  {% endfor %}],
+				datasets: [{
+					label: 'KNN',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.red,
+					borderColor: window.chartColors.red,
+					data: [{% for item in values['brooklynknn2019'] %}
+                      {{item}},
+                    {% endfor %}]
+				}, {
+					label: 'Decision Tree',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.blue,
+					borderColor: window.chartColors.blue,
+					data: [{% for item in values['BROOKLYNdtc2019'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Quadratic Regression 2',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.green,
+					borderColor: window.chartColors.green,
+					data: [{% for item in values['BROOKLYNclfpoly22019'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Quadratic Regression 3',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.yellow,
+					borderColor: window.chartColors.yellow,
+					data: [{% for item in values['BROOKLYNclfpoly32019'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Logistic Regression',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.grey,
+					borderColor: window.chartColors.grey,
+					data: [{% for item in values['BROOKLYNlr2019'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Random Forest',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.orange,
+					borderColor: window.chartColors.orange,
+					data: [{% for item in values['BROOKLYNrf2019'] %}
+                      {{item}},
+                    {% endfor %}],
+				}]
+			},
+			options: {
+				responsive: true,
+				title: {
+					display: true,
+					text: 'BROOKLYN 2019 Predicted Crime rate'
+				},
+			}
+		};
+            
+        var BROOKLYN2020 = {
+			type: 'line',
+			data: {
+				labels: [{% for item in labels %}
+                   "{{item}}",
+                  {% endfor %}],
+				datasets: [{
+					label: 'KNN',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.red,
+					borderColor: window.chartColors.red,
+					data: [{% for item in values['BROOKLYNknn2020'] %}
+                      {{item}},
+                    {% endfor %}]
+				}, {
+					label: 'Decision Tree',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.blue,
+					borderColor: window.chartColors.blue,
+					data: [{% for item in values['BROOKLYNdtc2020'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Quadratic Regression 2',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.green,
+					borderColor: window.chartColors.green,
+					data: [{% for item in values['BROOKLYNclfpoly22020'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Quadratic Regression 3',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.yellow,
+					borderColor: window.chartColors.yellow,
+					data: [{% for item in values['BROOKLYNclfpoly32020'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Logistic Regression',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.grey,
+					borderColor: window.chartColors.grey,
+					data: [{% for item in values['BROOKLYNlr2020'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Random Forest',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.orange,
+					borderColor: window.chartColors.orange,
+					data: [{% for item in values['BROOKLYNrf2020'] %}
+                      {{item}},
+                    {% endfor %}],
+				}]
+			},
+			options: {
+				responsive: true,
+				title: {
+					display: true,
+					text: 'BROOKLYN 2020 Predicted Crime rate'
+				},
+			}
+		};
+        
+        var BROOKLYN2021 = {
+			type: 'line',
+			data: {
+				labels: [{% for item in labels %}
+                   "{{item}}",
+                  {% endfor %}],
+				datasets: [{
+					label: 'KNN',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.red,
+					borderColor: window.chartColors.red,
+					data: [{% for item in values['BROOKLYNknn2021'] %}
+                      {{item}},
+                    {% endfor %}]
+				}, {
+					label: 'Decision Tree',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.blue,
+					borderColor: window.chartColors.blue,
+					data: [{% for item in values['BROOKLYNdtc2021'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Quadratic Regression 2',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.green,
+					borderColor: window.chartColors.green,
+					data: [{% for item in values['BROOKLYNclfpoly22021'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Quadratic Regression 3',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.yellow,
+					borderColor: window.chartColors.yellow,
+					data: [{% for item in values['BROOKLYNclfpoly32021'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Logistic Regression',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.grey,
+					borderColor: window.chartColors.grey,
+					data: [{% for item in values['BROOKLYNlr2021'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Random Forest',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.orange,
+					borderColor: window.chartColors.orange,
+					data: [{% for item in values['BROOKLYNrf2021'] %}
+                      {{item}},
+                    {% endfor %}],
+				}]
+			},
+			options: {
+				responsive: true,
+				title: {
+					display: true,
+					text: 'BROOKLYN 2021 Predicted Crime rate'
+				},
+			}
+		};
+            
+            var BROOKLYN2022 = {
+			type: 'line',
+			data: {
+				labels: [{% for item in labels %}
+                   "{{item}}",
+                  {% endfor %}],
+				datasets: [{
+					label: 'KNN',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.red,
+					borderColor: window.chartColors.red,
+					data: [{% for item in values['BROOKLYNknn2022'] %}
+                      {{item}},
+                    {% endfor %}]
+				}, {
+					label: 'Decision Tree',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.blue,
+					borderColor: window.chartColors.blue,
+					data: [{% for item in values['BROOKLYNdtc2022'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Quadratic Regression 2',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.green,
+					borderColor: window.chartColors.green,
+					data: [{% for item in values['BROOKLYNclfpoly22022'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Quadratic Regression 3',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.yellow,
+					borderColor: window.chartColors.yellow,
+					data: [{% for item in values['BROOKLYNclfpoly32022'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Logistic Regression',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.grey,
+					borderColor: window.chartColors.grey,
+					data: [{% for item in values['BROOKLYNlr2022'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Random Forest',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.orange,
+					borderColor: window.chartColors.orange,
+					data: [{% for item in values['BROOKLYNrf2022'] %}
+                      {{item}},
+                    {% endfor %}],
+				}]
+			},
+			options: {
+				responsive: true,
+				title: {
+					display: true,
+					text: 'BROOKLYN 2022 Predicted Crime rate'
+				},
+			}
+		};
+            var STATENISLAND2019 = {
+			type: 'line',
+			data: {
+				labels: [{% for item in labels %}
+                   "{{item}}",
+                  {% endfor %}],
+				datasets: [{
+					label: 'KNN',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.red,
+					borderColor: window.chartColors.red,
+					data: [{% for item in values['STATENISLANDknn2019'] %}
+                      {{item}},
+                    {% endfor %}]
+				}, {
+					label: 'Decision Tree',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.blue,
+					borderColor: window.chartColors.blue,
+					data: [{% for item in values['STATENISLANDdtc2019'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Quadratic Regression 2',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.green,
+					borderColor: window.chartColors.green,
+					data: [{% for item in values['STATENISLANDclfpoly22019'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Quadratic Regression 3',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.yellow,
+					borderColor: window.chartColors.yellow,
+					data: [{% for item in values['STATENISLANDclfpoly32019'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Logistic Regression',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.grey,
+					borderColor: window.chartColors.grey,
+					data: [{% for item in values['STATENISLANDlr2019'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Random Forest',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.orange,
+					borderColor: window.chartColors.orange,
+					data: [{% for item in values['STATENISLANDrf2019'] %}
+                      {{item}},
+                    {% endfor %}],
+				}]
+			},
+			options: {
+				responsive: true,
+				title: {
+					display: true,
+					text: 'STATENISLAND 2019 Predicted Crime rate'
+				},
+			}
+		};
+            
+        var STATENISLAND2020 = {
+			type: 'line',
+			data: {
+				labels: [{% for item in labels %}
+                   "{{item}}",
+                  {% endfor %}],
+				datasets: [{
+					label: 'KNN',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.red,
+					borderColor: window.chartColors.red,
+					data: [{% for item in values['STATENISLANDknn2020'] %}
+                      {{item}},
+                    {% endfor %}]
+				}, {
+					label: 'Decision Tree',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.blue,
+					borderColor: window.chartColors.blue,
+					data: [{% for item in values['STATENISLANDdtc2020'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Quadratic Regression 2',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.green,
+					borderColor: window.chartColors.green,
+					data: [{% for item in values['STATENISLANDclfpoly22020'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Quadratic Regression 3',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.yellow,
+					borderColor: window.chartColors.yellow,
+					data: [{% for item in values['STATENISLANDclfpoly32020'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Logistic Regression',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.grey,
+					borderColor: window.chartColors.grey,
+					data: [{% for item in values['STATENISLANDlr2020'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Random Forest',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.orange,
+					borderColor: window.chartColors.orange,
+					data: [{% for item in values['STATENISLANDrf2020'] %}
+                      {{item}},
+                    {% endfor %}],
+				}]
+			},
+			options: {
+				responsive: true,
+				title: {
+					display: true,
+					text: 'STATENISLAND 2020 Predicted Crime rate'
+				},
+			}
+		};
+        
+        var STATENISLAND2021 = {
+			type: 'line',
+			data: {
+				labels: [{% for item in labels %}
+                   "{{item}}",
+                  {% endfor %}],
+				datasets: [{
+					label: 'KNN',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.red,
+					borderColor: window.chartColors.red,
+					data: [{% for item in values['STATENISLANDknn2021'] %}
+                      {{item}},
+                    {% endfor %}]
+				}, {
+					label: 'Decision Tree',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.blue,
+					borderColor: window.chartColors.blue,
+					data: [{% for item in values['STATENISLANDdtc2021'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Quadratic Regression 2',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.green,
+					borderColor: window.chartColors.green,
+					data: [{% for item in values['STATENISLANDclfpoly22021'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Quadratic Regression 3',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.yellow,
+					borderColor: window.chartColors.yellow,
+					data: [{% for item in values['STATENISLANDclfpoly32021'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Logistic Regression',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.grey,
+					borderColor: window.chartColors.grey,
+					data: [{% for item in values['STATENISLANDlr2021'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Random Forest',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.orange,
+					borderColor: window.chartColors.orange,
+					data: [{% for item in values['STATENISLANDrf2021'] %}
+                      {{item}},
+                    {% endfor %}],
+				}]
+			},
+			options: {
+				responsive: true,
+				title: {
+					display: true,
+					text: 'STATENISLAND 2021 Predicted Crime rate'
+				},
+			}
+		};
+            
+            var STATENISLAND2022 = {
+			type: 'line',
+			data: {
+				labels: [{% for item in labels %}
+                   "{{item}}",
+                  {% endfor %}],
+				datasets: [{
+					label: 'KNN',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.red,
+					borderColor: window.chartColors.red,
+					data: [{% for item in values['STATENISLANDknn2022'] %}
+                      {{item}},
+                    {% endfor %}]
+				}, {
+					label: 'Decision Tree',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.blue,
+					borderColor: window.chartColors.blue,
+					data: [{% for item in values['STATENISLANDdtc2022'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Quadratic Regression 2',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.green,
+					borderColor: window.chartColors.green,
+					data: [{% for item in values['STATENISLANDclfpoly22022'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Quadratic Regression 3',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.yellow,
+					borderColor: window.chartColors.yellow,
+					data: [{% for item in values['STATENISLANDclfpoly32022'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Logistic Regression',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.grey,
+					borderColor: window.chartColors.grey,
+					data: [{% for item in values['STATENISLANDlr2022'] %}
+                      {{item}},
+                    {% endfor %}],
+				}, {
+					label: 'Random Forest',
+					fill: false,
+                    lineTension: 0,
+					backgroundColor: window.chartColors.orange,
+					borderColor: window.chartColors.orange,
+					data: [{% for item in values['STATENISLANDrf2022'] %}
+                      {{item}},
+                    {% endfor %}],
+				}]
+			},
+			options: {
+				responsive: true,
+				title: {
+					display: true,
+					text: 'STATENISLAND 2022 Predicted Crime rate'
+				},
+			}
+		};
+            var bronx2019 = {
 			type: 'line',
 			data: {
 				labels: [{% for item in labels %}
@@ -661,12 +1510,39 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
       var ctx2 = document.getElementById("myChart2").getContext("2d");
       var ctx3 = document.getElementById("myChart3").getContext("2d");
       var ctx4 = document.getElementById("myChart4").getContext("2d");
+      var ctx5 = document.getElementById("myChart5").getContext("2d");
+      var ctx6 = document.getElementById("myChart6").getContext("2d");
+      var ctx7 = document.getElementById("myChart7").getContext("2d");
+      var ctx8 = document.getElementById("myChart8").getContext("2d");
+      var ctx9 = document.getElementById("myChart9").getContext("2d");
+      var ctx10 = document.getElementById("myChart10").getContext("2d");
+      var ctx11 = document.getElementById("myChart11").getContext("2d");
+      var ctx12 = document.getElementById("myChart12").getContext("2d");
+      var ctx13 = document.getElementById("myChart13").getContext("2d");
+      var ctx14 = document.getElementById("myChart14").getContext("2d");
+      var ctx15 = document.getElementById("myChart15").getContext("2d");
+      var ctx16 = document.getElementById("myChart16").getContext("2d");
+
 
       // create the chart using the chart canvas
       var myChart1= new Chart(ctx1,bronx2019);
       var myChart2= new Chart(ctx2,bronx2020);
       var myChart3= new Chart(ctx3,bronx2021);
       var myChart4= new Chart(ctx4,bronx2022);
+      var myChart5= new Chart(ctx5,MANHATTAN2019);
+      var myChart6= new Chart(ctx6,MANHATTAN2020);
+      var myChart7= new Chart(ctx7,MANHATTAN2021);
+      var myChart8= new Chart(ctx8,MANHATTAN2022);
+      var myChart9= new Chart(ctx9,BROOKLYN2019);
+      var myChart10= new Chart(ctx10,BROOKLYN2020);
+      var myChart11= new Chart(ctx11,BROOKLYN2021);
+      var myChart12= new Chart(ctx12,BROOKLYN2022);
+      var myChart13= new Chart(ctx13,STATENISLAND2019);
+      var myChart14= new Chart(ctx14,STATENISLAND2020);
+      var myChart15= new Chart(ctx15,STATENISLAND2021);
+      var myChart16= new Chart(ctx16,STATENISLAND2022);
+            
+            
     </script>
 
 </body>
